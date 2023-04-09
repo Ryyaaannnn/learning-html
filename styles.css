@@ -1,18 +1,125 @@
-
 *{
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 html, body{
     margin: 0;
     padding: 0;
 }
-.nav ul{
-    margin: 0;
-}
-.main-header{
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url(images/leaf\ picture.jpg);
+.header{
+    background-color: rgba(0, 0, 0,0);
+    background-image: url(images/new-leaf-header.jpg);
+    background-position: center;
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
+    color: white
 }
+
+.nav ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.nav li{
+    display: inline;
+    border-bottom: 3px solid rgb(255,255,255,.3);
+    padding-bottom: 5px;
+}
+.nav a{
+    color: white;
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pad-left{
+    padding-left: 2.5%;
+}
+.pad-right{
+    padding-right: 2.5%;
+}
+
+.footer ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.footer li{
+    display: inline;
+    border-bottom: 3px solid rgba(124, 116, 116, 0.6);
+    padding-bottom: 5px;
+}
+
+.footer a{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer{
+    background-color: rgba(0, 0, 0,0);
+    background-image: url(images/footer.jpg);
+    background-size: cover;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    margin-top: auto;
+}
+
+.quote{
+    max-width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border: 10px solid transparent;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-image: url(images/textborder.png) 40 round;
+}
+
+.shop{
+    margin-bottom: 20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#last-quote{
+    margin-bottom: 50px;
+}
+
+.item{
+    border: 5px solid;
+}
+
